@@ -78,3 +78,10 @@
     outline: none;
     border-bottom: 2.4px solid darkblue;
 }
+
+@media (min-width: 768px) {
+    .simulador{
+        position: relative;
+        left: 10%;
+    }
+}

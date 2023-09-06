@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
     .contenedor-cuentas {
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -21,5 +21,11 @@
     
     .contenedor-cuentas .cada-cuenta {
         width: 30vw;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
     }
 }

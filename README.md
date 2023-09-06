@@ -1,7 +1,7 @@
 # ITBANK-comision3-grupo4
 
 ## Bienvenida
-Bienvenidos/as al repositorio remoto del grupo 4, mejor conocido como Banco Río. Nos insipiramos en la famosa película argentina llamda "El robo del siglo" y tomamos al Banco Río (víctima del robo bancario más grande en la historia argentina) como referencia para construir nuestro proyecto a su alrededor.
+Bienvenidos/as al repositorio remoto del grupo 4, mejor conocido como Banco Río. Nos insipiramos en la famosa película argentina llamada "El robo del siglo" y tomamos al Banco Río (víctima del robo bancario más grande en la historia argentina) como referencia para construir nuestro proyecto a su alrededor.
 
 ## Integrantes del grupo: 
 Santiago Ance

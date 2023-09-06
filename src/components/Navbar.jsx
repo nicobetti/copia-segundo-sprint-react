@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/Navbar.css"
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -21,8 +20,8 @@ export default function Navbar() {
                         </Button></li>
                     <Collapse in={open}>
                         <div id="opciones-transferencias">
-                            <Link to="/transfers" className="collapsable-item">Comprobantes</Link>
-                            <Link to="/newtransfer" className="collapsable-item">Nueva transferencia</Link>
+                            <div><Link to="/transfers">Comprobantes</Link></div>
+                            <div><Link to="/newtransfer">Nueva transferencia</Link></div>
                         </div>
                     </Collapse>
                     <li><Link to="/conversor"><i className="fa-solid fa-dollar-sign"></i> Conversor</Link></li>

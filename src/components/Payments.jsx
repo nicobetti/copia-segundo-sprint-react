@@ -1,12 +1,11 @@
-import React from "react";
 import "../css/Payments.css";
 import Navbar from "./Navbar";
 
 export default function Payments() {
     return (
-        <>
+        <div className="principal">
             <Navbar></Navbar>
-            <div className="container mt-3 tabla-bootstrap" id="pagos">
+            <div className="container-lg mt-3 tabla-bootstrap" id="pagos">
                 <h2>Pagos realizados</h2>
                 <p><strong>ATENCION:</strong> Algunos pagos pueden demorar hasta 24hs en verse reflejados.</p>
                 <table className="table table-hover" id="tabla-pago">
@@ -40,6 +39,6 @@ export default function Payments() {
                     </tbody>
                 </table>
             </div>
-        </>
+        </div>
     )
 }

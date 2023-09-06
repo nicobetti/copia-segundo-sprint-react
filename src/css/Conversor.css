@@ -22,12 +22,12 @@
     border-bottom: 2.4px solid darkblue;
 }
 
-.boton {
+#botoninvertir {
     font-weight: bold;
     margin: 0.5rem;
-    width: 100%;
     padding: 1rem;
     border-radius: 5px;
+    width: 100%;
     color: whitesmoke;
     background-color: darkblue;
     align-self: center;

@@ -1,10 +1,9 @@
-import React from "react";
 import "../css/NewTransfer.css"
 import Navbar from "./Navbar";
 
 export default function NewTransfers() {
     return (
-        <>
+        <div className="principal">
         <Navbar></Navbar>
           <div className="contenedor-form">
             <h1> Nueva transferencia</h1>
@@ -46,6 +45,6 @@ export default function NewTransfers() {
             <button className="boton-transferencia">Enviar</button>
         </form>
         </div>
-        </>
+        </div>
     )
 }

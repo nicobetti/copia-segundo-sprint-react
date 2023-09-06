@@ -1,10 +1,9 @@
-import React from "react";
 import "../css/Conversor.css"
 import Navbar from "./Navbar";
 
 export default function Conversor(){
     return (
-        <>
+        <div className="principal">
             <Navbar></Navbar>
             <article className="conversor">
             <h1> Conversor de monedas</h1>
@@ -43,6 +42,6 @@ export default function Conversor(){
                 <input type="text" className="sin-borde" name="monto2" id="monto2" placeholder="0"/>
             </div>
         </article>
-        </>
+        </div>
     )
 }

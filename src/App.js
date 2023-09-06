@@ -9,7 +9,7 @@ import Conversor from './components/Conversor';
 import LoanSimulator from './components/LoanSimulator';
 import Login from './components/Login';
 
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Header></Header>
         <Routes>
-        <Route path="/accounts" element={<Accounts />}></Route>
+          <Route path="/accounts" element={<Accounts />}></Route>
           <Route path="/payments" element={<Payments />}></Route>
           <Route path="/transfers" element={<Transfers />}></Route>
           <Route path="/newtransfer" element={<NewTransfer />}></Route>
