@@ -1,0 +1,13 @@
+#transferencias {
+    max-width: 60vw;
+}
+
+#tabla-pago {
+    width: 80%;
+}
+
+@media (max-width: 450px) {
+    .oculto {
+        display: none;
+    }
+}

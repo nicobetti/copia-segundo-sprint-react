@@ -1,0 +1,47 @@
+.menu-ingreso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    box-shadow: 16px 10px 30px -17px rgba(0,0,0,0.74);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 3rem;
+    max-width: 80vw;
+}
+
+.header-login {
+    text-align: center;
+}
+
+.formulario input {
+    margin-bottom: 20px;
+    width: 80%;
+    align-self: center;
+}
+
+.formulario label {
+    margin-left: 1.5rem;
+}
+
+.boton {
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: darkblue;
+    width: 40%;
+    align-self: center;
+}
+
+.center {
+    text-align: center;
+}

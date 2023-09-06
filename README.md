@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# ITBANK-comision3-grupo4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Bienvenida
+Bienvenidos/as al repositorio remoto del grupo 4, mejor conocido como Banco Río. Nos insipiramos en la famosa película argentina llamda "El robo del siglo" y tomamos al Banco Río (víctima del robo bancario más grande en la historia argentina) como referencia para construir nuestro proyecto a su alrededor.
 
-## Available Scripts
+## Integrantes del grupo: 
+Santiago Ance
 
-In the project directory, you can run:
+Mateo Brena
 
-### `npm start`
+Pablo Ferrarese
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Camila Vargas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Trello
+Este es el link a nuestro espacio de trabajo en Trello: https://trello.com/b/LXV99wbU/banco-r%C3%ADo
 
-### `npm test`
+## Tecnologías
+En el proyecto usamos los lenguajes de HTML5 JavaScript y CSS. También utlizamos Bootstrap para algunas cuestiones de estilos y funcionalidad.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Guía
+Nuestro banco consta de una página principal (index.html) que funciona como landing para cualquier visitante. Para acceder al Home banking o bien crear una cuenta en caso de no ser todavía un cliente, usamos el login.html. Estas dos vistas (index.html y login.html) están aisladas del resto al no poseer todavía un login funcional que permita/niegue la entrada al Home banking. Para acceder al mismo se debe utilizar la barra de navegación del navegador e ingresar a la vista de views/cuentas.html, desde allí todo el resto de las vistas están conectadas mediante la barra lateral o el menú desplegable (según la pantalla del dispositivo). Para regresar a la página principal, simplemente se debe hacer click en el item de "Inicio" de la barra de navegación o sobre el logo del banco.
