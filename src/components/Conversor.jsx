@@ -1,6 +1,6 @@
 import "../css/Conversor.css"
 import Navbar from "./Navbar";
-import { useState } from "react";
+import { useState} from "react";
 import Header from "./Header";
 
 export default function Conversor() {
@@ -8,6 +8,18 @@ export default function Conversor() {
     const [montoDos, setmontoDos] = useState("")
     const [monedaUno, setMonedaUno] = useState("USD")
     const [monedaDos, setMonedaDos] = useState("ARS")
+   /*  const [precios,setPrecios] = useState([])
+
+    useEffect(() => {
+      fetch(`https://api.exchangerate-api.com/v4/latest/${monedaUno}`)
+      .then(response => response.json())
+      .then( data => {
+        setPrecios(data.precios)
+      })
+      .catch(error => {
+        console.log(error("Error: ", error))
+      })
+    },[]) */
     return (
         <>
             <Header></Header>
@@ -34,7 +46,7 @@ export default function Conversor() {
                 </div>
                 <div className="contenedor_invertir">
                     <button className="boton" id="botoninvertir"><i className="fa-solid fa-shuffle"></i></button>
-                    <div className="precio" id="precio">{monedaUno}{montoUno} {monedaDos}{montoDos}</div>
+                    <div className="precio" id="precio"></div>
                 </div>
                 <div>
                     <select name="monedaDos" id="monedaDos" value={monedaDos} onChange={e => setMonedaDos(e.target.value)}>
