@@ -1,20 +1,23 @@
 import "../css/NewTransfer.css"
 import Navbar from "./Navbar";
+import Header from "./Header";
 
 export default function NewTransfers() {
     return (
-        <div className="principal">
+        <>
+            <Header></Header>
+            <div className="principal">
         <Navbar></Navbar>
           <div className="contenedor-form">
             <h1> Nueva transferencia</h1>
         <form action="" className="formulario-transfer">
             <div>
                 <label for="destinatario">Destinatario:</label>
-                <input type="text" name="destinatario" id="destinatario"/>
                 <select name="identificacion" id="identificacion">
                     <option value="cbu">CBU</option>
                     <option value="alias">Alias</option>
                 </select>
+                <input type="text" name="destinatario" id="destinatario"/>
             </div>
             <div>
                     <label for="origen">Cuenta de origen:</label>
@@ -46,5 +49,6 @@ export default function NewTransfers() {
         </form>
         </div>
         </div>
+        </>
     )
 }

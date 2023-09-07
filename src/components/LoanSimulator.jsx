@@ -1,9 +1,12 @@
 import "../css/LoanSimulator.css"
 import Navbar from "./Navbar";
+import Header from "./Header";
 
 export default function LoanSimulator(){
     return(
-        <div className="principal">
+        <>
+            <Header></Header>
+            <div className="principal">
             <Navbar></Navbar>
             <div className="simulador">
             <h1>Simulador de préstamos</h1>
@@ -29,5 +32,7 @@ export default function LoanSimulator(){
             <div id="resultado"></div>
         </div>
         </div>
+        </>
+        
     )
 }

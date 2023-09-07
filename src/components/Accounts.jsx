@@ -1,10 +1,13 @@
 import "../css/Accounts.css"
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 export default function Accounts() {
     return (
-        <div className="principal">
+        <>
+            <Header></Header>
+            <div className="principal">
             <Navbar></Navbar>
             <div className="container-m m-3 contenedor-cuentas" >
                 <div className="container p-2 bg-secondary text-white cada-cuenta">
@@ -33,5 +36,7 @@ export default function Accounts() {
                 </div>
             </div>
         </div>
+        </>
+        
     )
 }

@@ -1,9 +1,12 @@
 import "../css/Payments.css";
 import Navbar from "./Navbar";
+import Header from "./Header";
 
 export default function Payments() {
     return (
-        <div className="principal">
+        <>
+            <Header></Header>
+            <div className="principal">
             <Navbar></Navbar>
             <div className="container-lg mt-3 tabla-bootstrap" id="pagos">
                 <h2>Pagos realizados</h2>
@@ -40,5 +43,7 @@ export default function Payments() {
                 </table>
             </div>
         </div>
+        </>
+        
     )
 }

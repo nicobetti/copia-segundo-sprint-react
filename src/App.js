@@ -1,4 +1,3 @@
-import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Payments from './components/Payments';
@@ -15,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header></Header>
         <Routes>
           <Route path="/accounts" element={<Accounts />}></Route>
           <Route path="/payments" element={<Payments />}></Route>

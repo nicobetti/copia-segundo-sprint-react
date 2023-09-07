@@ -19,16 +19,15 @@
 
 .header-login {
     text-align: center;
+    margin: 1rem;
+}
+
+.contenedor-login {
+    text-align: center;
 }
 
 .formulario input {
-    margin-bottom: 20px;
-    width: 80%;
     align-self: center;
-}
-
-.formulario label {
-    margin-left: 1.5rem;
 }
 
 .boton {
@@ -44,4 +43,10 @@
 
 .center {
     text-align: center;
+    margin-top: 1rem;
+}
+
+.center a{
+    color: darkblue;
+    text-decoration: none;
 }

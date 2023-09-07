@@ -1,9 +1,12 @@
 import "../css/Transfers.css"
 import Navbar from "./Navbar";
+import Header from "./Header";
 
 export default function Transfers() {
     return (
-        <div className="principal">
+        <>
+            <Header></Header>
+            <div className="principal">
             <Navbar></Navbar>
             <div className="container-lg mt-3 tabla-bootstrap" id="transferencias">
                 <h2>Transferencias enviadas/recibidas</h2>
@@ -40,5 +43,7 @@ export default function Transfers() {
                 </table>
             </div>
         </div>
+        </>
+        
     )
 }
