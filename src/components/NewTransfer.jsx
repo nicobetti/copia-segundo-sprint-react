@@ -1,3 +1,4 @@
+import Form from "react-bootstrap/Form"
 import "../css/NewTransfer.css"
 import Navbar from "./Navbar";
 import Header from "./Header";
@@ -12,26 +13,26 @@ export default function NewTransfers() {
             <h1> Nueva transferencia</h1>
         <form action="" className="formulario-transfer">
             <div>
-                <label for="destinatario">Destinatario:</label>
-                <select name="identificacion" id="identificacion">
+                <label htmlFor="destinatario">Destinatario:</label>
+                <Form.Select name="identificacion" id="identificacion">
                     <option value="cbu">CBU</option>
                     <option value="alias">Alias</option>
-                </select>
-                <input type="text" name="destinatario" id="destinatario"/>
+                </Form.Select>
+                <input type="text" name="destinatario" id="destinatario" className="form m-3"/>
             </div>
             <div>
-                    <label for="origen">Cuenta de origen:</label>
+                    <label htmlFor="origen">Cuenta de origen:</label>
                     <select name="origen" id="origen" >
                         <option value="ars">CA $ARS 000215684156</option>
                         <option value="usd">CA $USD 000215684157</option>
                     </select>
             </div>
             <div>
-                    <label for="monto">Monto:</label>
+                    <label htmlFor="monto">Monto:</label>
                     <input type="number" id="monto" name="monto"/>
             </div>
             <div>
-                <label for="motivo">Motivo:</label>
+                <label htmlFor="motivo">Motivo:</label>
                 <select name="motivo" id="motivo">
                     <option value="alquiler">Alquiler</option>
                     <option value="expensas">Expensas</option>
@@ -42,7 +43,7 @@ export default function NewTransfers() {
                 </select>
             </div>
             <div>
-                <label for="referencia">Referencia:</label>
+                <label htmlFor="referencia">Referencia:</label>
                 <input type="text" id="referencia" name="referencia"/>
             </div>
             <button className="boton-transferencia">Enviar</button>
