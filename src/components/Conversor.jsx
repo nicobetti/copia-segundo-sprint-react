@@ -1,6 +1,6 @@
 import "../css/Conversor.css"
 import Navbar from "./Navbar";
-import { useState} from "react";
+import { useState, useEffect} from "react";
 import Header from "./Header";
 
 export default function Conversor() {
@@ -8,18 +8,26 @@ export default function Conversor() {
     const [montoDos, setmontoDos] = useState("")
     const [monedaUno, setMonedaUno] = useState("USD")
     const [monedaDos, setMonedaDos] = useState("ARS")
-   /*  const [precios,setPrecios] = useState([])
+    const [precios,setPrecios] = useState([])
 
     useEffect(() => {
+        console.log("Using effect..")
       fetch(`https://api.exchangerate-api.com/v4/latest/${monedaUno}`)
       .then(response => response.json())
       .then( data => {
-        setPrecios(data.precios)
+        console.log(data)
+        setPrecios(data.rates)
       })
       .catch(error => {
         console.log(error("Error: ", error))
       })
-    },[]) */
+    },[monedaUno]) 
+
+    const calculateEvent =()=>{
+        console.log("Calculating",precios[monedaDos]*montoUno)
+        setmontoDos(precios[monedaDos]*montoUno)
+    }
+
     return (
         <>
             <Header></Header>
@@ -45,7 +53,7 @@ export default function Conversor() {
                         placeholder="0" onChange={e => { setmontoUno(e.target.value); }} />
                 </div>
                 <div className="contenedor_invertir">
-                    <button className="boton" id="botoninvertir"><i className="fa-solid fa-shuffle"></i></button>
+                    <button className="boton" id="botoninvertir" onClick={calculateEvent} ><i className="fa-solid fa-shuffle" ></i></button>
                     <div className="precio" id="precio"></div>
                 </div>
                 <div>
